@@ -5,11 +5,13 @@ const Rectanle = () => {
     <div className="Rectangle">
       <div className="The__Stanton__Children">
         The Stanton Children's Education Fund
-        <img
-          className="white-down-arrow-png-2"
-          src="/image/white-down-arrow-png-2.png"
-          alt=""
-        />
+        <button>
+          <img
+            className="white-down-arrow-png-2"
+            src="/image/white-down-arrow-png-2.png"
+            alt=""
+          />
+        </button>
       </div>
       <div className="ThestandardVCEPSeedFund">The standard VCEP Seed Fund</div>
     </div>

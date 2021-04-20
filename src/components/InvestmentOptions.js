@@ -63,7 +63,9 @@ const InvestmentOptions = () => {
           </div>
         </div>
       </div>
-      <div className="recommend"> + Recommend an exchange</div>
+      <div className="recommend">
+        <a href="#top"> + Recommend an exchange</a>
+      </div>
     </div>
   );
 };

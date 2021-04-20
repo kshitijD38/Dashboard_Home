@@ -7,18 +7,7 @@ const HomeRest = () => {
         <div style={{ marginTop: 24.5 }} className="available__balance">
           Available Balance
           <div style={{ fontSize: 20, color: "lightblue" }}>$500,000</div>
-          <button
-            style={{
-              borderRadius: 10,
-              border: "none",
-              color: "white",
-              backgroundColor: "lightblue",
-              fontSize: 10,
-              width: 29,
-            }}
-          >
-            Add
-          </button>
+          <button>Add</button>
         </div>
         <div className="current__balance">
           Current Balance
@@ -33,7 +22,7 @@ const HomeRest = () => {
       <div className="Legacy__Activity">
         <div className="legacy__journey">
           Legacy Journey
-          <div>
+          <div className="legacy__journey__img">
             <img
               className="legacy__graph"
               src="/image/Legacy__graph.png"

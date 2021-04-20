@@ -7,6 +7,8 @@ const CardB3 = () => {
         className="cards__back__image"
         style={{
           backgroundImage: `url("/image/card-5.png")`,
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
         }}
       >
         <div
@@ -53,9 +55,31 @@ const CardB3 = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <div className="so" style={{ backgroundColor: "#f3f3f3" }}>
-          Summary
+          <button
+            onClick={(e) => {
+              if (e.target.style.backgroundColor === "white") {
+                e.target.style.backgroundColor = "#f3f3f3";
+              } else {
+                e.target.style.backgroundColor = "white";
+              }
+            }}
+          >
+            Summary
+          </button>
         </div>
-        <div className="so">Operations</div>
+        <div className="so">
+          <button
+            onClick={(e) => {
+              if (e.target.style.backgroundColor === "white") {
+                e.target.style.backgroundColor = "#f3f3f3";
+              } else {
+                e.target.style.backgroundColor = "white";
+              }
+            }}
+          >
+            Operations
+          </button>
+        </div>
       </div>
       <div className="card__information" style={{ marginTop: 40 }}>
         <div style={{ fontSize: 10, marginLeft: 17 }}>
@@ -66,7 +90,11 @@ const CardB3 = () => {
           </p>
         </div>
         <div>
-          <p className="more">More +</p>
+          <p className="more">
+            <a style={{ color: "#6ec9d9" }} href="#top">
+              More +
+            </a>
+          </p>
         </div>
         <div
           style={{
@@ -75,16 +103,20 @@ const CardB3 = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <div
-            className="lb"
-            style={{
-              color: "white",
-              backgroundColor: "rgb(100, 188, 218)",
-            }}
-          >
-            Recommend Grant
+          <div className="lb">
+            <button
+              style={{
+                color: "white",
+                backgroundColor: "rgb(100, 188, 218)",
+                borderBottomLeftRadius: 10,
+              }}
+            >
+              Recommend Grant
+            </button>
+            <button style={{ borderBottomRightRadius: 10 }}>
+              Visit Website
+            </button>
           </div>
-          <div className="lb">Visit Website</div>
         </div>
       </div>
     </div>

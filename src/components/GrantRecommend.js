@@ -3,10 +3,10 @@ import React from "react";
 const GrantRecommend = () => {
   return (
     <div className="grant__recommend">
-      <div style={{ fontSize: 20, marginRight: 200 }}>Grant Recommendation</div>
+      <div style={{ fontSize: 20, marginLeft: 75 }}>Grant Recommendation</div>
       <div style={{ marginLeft: 200 }} className="grant__button">
         {/* <div> */}
-        <button>
+        <button style={{ marginRight: 20 }}>
           <img src="/image/filter.png" alt="" />
           Filter by category
         </button>

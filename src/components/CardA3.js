@@ -9,7 +9,9 @@ const CardA3 = () => {
           <div className="everyYear">Every year</div>
         </div>
         <div style={{ marginLeft: 80 }} className="whole__length">
-          <div className="length__filled3"></div>
+          <div className="length__filled3">
+            <div className="oval45" />
+          </div>
         </div>
         <div style={{ fontSize: 10 }}>45%</div>
       </div>
@@ -17,6 +19,7 @@ const CardA3 = () => {
         className="cards__back__image"
         style={{
           backgroundImage: `url("/image/card-2.png")`,
+          borderTopLeftRadius: 0,
         }}
       >
         <div
@@ -88,8 +91,10 @@ const CardA3 = () => {
             "Mrs. Wong taught me how to speak English, how to think, how to
             question. This teacher was caring, and went above and beyond to make
             me feel confident.
-            <span className="more" style={{ border: "none" }}>
-              " http://ow.ly/9PlR30hyMOj”
+            <span className="more">
+              <a style={{ color: "#6ec9d9" }} href="#top">
+                " http://ow.ly/9PlR30hyMOj”
+              </a>
             </span>
           </p>
         </div>
@@ -102,13 +107,19 @@ const CardA3 = () => {
             "Mrs. Wong taught me how to speak English, how to think, how to
             question. This teacher was caring, and went above and beyond to make
             me feel confident.
-            <span className="more" style={{ border: "none" }}>
-              " http://ow.ly/9PlR30hyMOj”
+            <span className="more">
+              <a style={{ color: "#6ec9d9" }} href="#top">
+                " http://ow.ly/9PlR30hyMOj”
+              </a>
             </span>
           </p>
         </div>
         <div>
-          <p className="more">More +</p>
+          <p className="more">
+            <a style={{ color: "#6ec9d9" }} href="#top">
+              More +
+            </a>
+          </p>
         </div>
       </div>
     </div>
